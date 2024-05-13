@@ -3,6 +3,7 @@ export default {}
 </script>
 
 <template>
+    ciaociao
 </template>
 
 <style lang="scss">
