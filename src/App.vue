@@ -1,9 +1,20 @@
 <script>
-export default {}
+import AppHeader from './components/AppHeader.vue';
+import Discover from './components/Discover.vue';
+
+export default {
+    components: {
+        AppHeader,
+        Discover
+    }
+}
 </script>
 
 <template>
-    ciao
+    <AppHeader></AppHeader>
+    <main>
+        <Discover></Discover>
+    </main>
 </template>
 
 <style lang="scss">
