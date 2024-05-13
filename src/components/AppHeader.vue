@@ -7,7 +7,7 @@ export default {
     }
 }
 </script>
-
+<!-- DA POPOLARE DINAMICAMENTE  -->
 <template>
    <header>
     <div class="top">
