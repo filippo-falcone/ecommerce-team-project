@@ -37,45 +37,10 @@ export default {
     <div class="bottom mt-0">
             <div class="d-flex justify-content-between">
                 <div class="left-bot">
-                    <div class="ms-nav d-flex ">
-                        <ul class="list-unstyled px-2">
-                            <li>
-                                <a href="">ok</a>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <a href="">ok</a>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <a href="">ok</a>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <a href="">ok</a>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <a href="">ok</a>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <a href="">ok</a>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <a href="">ok</a>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <a href="">ok</a>
+                    <div class="ms-nav ">
+                        <ul class="list-unstyled px-2 d-flex gap-3" >
+                            <li v-for="link in links">
+                                <a href="">{{ link }}</a>
                             </li>
                         </ul>
                     </div>
