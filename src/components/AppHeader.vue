@@ -3,7 +3,7 @@ export default {}
 </script>
 
 <template>
-    ciao
+    ciao2
 </template>
 
 <style scoped lang="scss"></style>
