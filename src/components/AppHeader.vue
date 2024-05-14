@@ -55,35 +55,4 @@ export default {
    </header>
 </template>
 
-<style scoped lang="scss">
- @use '../style/partials/_variables' as *;
- .top{
-    background-color: $brand_primary;
- }
- .bottom{
-    background-color: $brand_primary_light;
-    color:$brand_secondary;
- }
-
- .input-color{
-    background-color: $brand_secondary_dark;
-    color :$brand_secondary;
- }
- .left,.right
- {
-    color: $brand_secondary;
- }
-.center{
-    width:80%
-}
-input{
-    width: 100%;
-}
-li{
-    list-style: none;
-}
-a{
-    text-decoration: none;
-    color: inherit;
-}
-</style>
+<style scoped lang="scss"></style>
