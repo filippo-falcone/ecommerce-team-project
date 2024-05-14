@@ -1,6 +1,11 @@
 <script>
-export default {
-    data(){
+import RoundedCard from './RoundedCard.vue';
+		
+    export default {
+        components: {
+            RoundedCard,
+        },
+        data(){
         return {
             data: [
                 {
@@ -73,9 +78,19 @@ export default {
             ]
         };
     }
-}
+    }
 </script>
 
-<template></template>
+<template>
+    <div class="container">
+        <div class="hstack gap-3 py-2">
+            <h3 class="mb-0">Scopri i prodotti Made in Italy</h3>
+            <a href="#">Scopri</a>
+        </div>
+        <div class="hstack gap-2">
+            <RoundedCard></RoundedCard>
+        </div>
+    </div>
+</template>
 
 <style scoped lang="scss"></style>
