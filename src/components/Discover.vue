@@ -1,11 +1,11 @@
 <script>
 import RoundedCard from './RoundedCard.vue';
-		
-    export default {
-        components: {
-            RoundedCard,
-        },
-        data(){
+
+export default {
+    components: {
+        RoundedCard,
+    },
+    data() {
         return {
             data: [
                 {
@@ -78,19 +78,35 @@ import RoundedCard from './RoundedCard.vue';
             ]
         };
     }
-    }
+}
 </script>
 
 <template>
-    <div class="container">
-        <div class="hstack gap-3 py-2">
-            <h3 class="mb-0">Scopri i prodotti Made in Italy</h3>
-            <a href="#">Scopri</a>
+    <section>
+        <div class="container">
+            <div class="hstack gap-3 py-2">
+                <h3 class="mb-0">{{ data[0].sectionTitle }}</h3>
+                <a href="#">Scopri</a>
+            </div>
+            <div class="hstack gap-2  overflow-x-hidden">
+                <RoundedCard v-for="info in data[0].info" :cardInfo="info"></RoundedCard>
+            </div>
+            <div class="arrow left">
+                <i class="fa-solid fa-chevron-left fa-2xl"></i>
+            </div>
+            <div class="arrow right">
+                <i class="fa-solid fa-chevron-right fa-2xl"></i>
+            </div>
         </div>
-        <div class="hstack gap-2">
-            <RoundedCard></RoundedCard>
-        </div>
-    </div>
+    </section>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+@use '../style/partials/variables' as *;
+
+section {
+    .container {
+        background-color: $brand_light;
+    }
+}
+</style>
